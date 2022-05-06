@@ -1,0 +1,15 @@
+- hosts: all
+  roles:
+    - role: arubanetworks.aos_wlan_role
+  tasks:
+    - name: Creating node hierarchy
+      aos_api_config:
+        method: POST
+        config_path: /md
+        data:
+          - configuration_node:
+              node-path: /md/region
+          - configuration_node:
+              node-path: /md/region/site
+          - configuration_node:
+              node-path: /md/region/site/building
