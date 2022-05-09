@@ -7,3 +7,9 @@
     - name: Show command for fetching AP database
       aos_show_command:
        command: show ap database
+      notify: print_change_handler
+      register: print_change
+  handlers:
+    - name: print_change_handler
+      debug:
+        msg: "{{print_change}}"
