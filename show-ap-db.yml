@@ -2,7 +2,7 @@
 - name: "Tower AOS Play"
   hosts: TEST_WIRELESS
   roles:
-    - role: arubanetworks.aos_wlan_role
+    - role: aos-wlan-ansible-role
   tasks:
     - name: Show command for fetching AP database
       aos_show_command:
