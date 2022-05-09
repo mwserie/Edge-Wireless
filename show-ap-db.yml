@@ -7,6 +7,3 @@
     - name: Show command for fetching AP database
       aos_show_command:
        command: show ap database
-    - name: Show command for fetching Web Server Profile
-      aos_show_command:
-       command: show web-server profile
