@@ -6,7 +6,7 @@
   tasks:
     - name: Show command for fetching AP database
       aos_show_command:
-       command: show ap database
+       command: show version
       notify: print_change_handler
       register: print_change
   handlers:
